@@ -3,10 +3,12 @@ Article.destroy_all
 User.destroy_all
 Category.destroy_all
 
-admin = User.create!(email: 'admin@test.com', password: 'test123', admin: true)
+
 
 editor1 = User.create!(email: 'editor1@test.com', password:'test123', editor: true)
 editor2 = User.create!(email: 'editor2@test.com', password: 'test123', editor: true)
+
+admin = User.create!(email: 'admin@test.com', password: 'test123', admin: true)
 
 user1 = User.create!(email: 'user@test.com', password: 'test123')
 

@@ -19,6 +19,7 @@ gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'faker'
 end
 
 group :development, :test do
@@ -28,4 +29,7 @@ group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
+  gem  'rspec-rails'
+  gem 'capybara'
+  gem 'factory_bot_rails'
 end

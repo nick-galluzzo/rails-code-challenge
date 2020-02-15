@@ -1,1 +1,9 @@
-// Specific CSS for your home-page
+.article-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.user-actions {
+  text-align: center;
+  padding: 40px;
+}
