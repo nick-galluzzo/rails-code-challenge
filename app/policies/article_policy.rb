@@ -12,4 +12,8 @@ class ArticlePolicy < ApplicationPolicy
   def show?
     return true
   end
+
+  def destroy?
+    user = record.user ? true : false
+  end
 end
