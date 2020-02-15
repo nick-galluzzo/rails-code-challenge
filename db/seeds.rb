@@ -1,7 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+Article.destroy_all
+User.destroy_all
+Category.destroy_all
+
+User.create!(email: 'test@test.com', password:'test123')
+
+travel = Category.create!(name: 'travel')
+sports = Category.create!(name: 'sports')
+adventure = Category.create!(name: 'adventure')
+
+
+Article.create!(title: 'title1', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+
+Article.create!(title: 'title2', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: adventure, user: User.first)
+
+Article.create!(title: 'title3', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+
+Article.create!(title: 'title4', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+
+Article.create!(title: 'title5', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: sports, user: User.first)
+
+Article.create!(title: 'title6', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title7', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title8', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title9', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title10', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title11', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: 'title12', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
