@@ -6,14 +6,32 @@ class ArticlePolicy < ApplicationPolicy
   end
 
   def index?
-    return true
+    true
   end
 
   def show?
-    return true
+    return true if user
+  end
+
+  def create?
+    user_is_editor?
   end
 
   def destroy?
-    user = record.user ? true : false
+    user_is_owner?
+  end
+
+  def update?
+    user_is_owner?
+  end
+
+  private
+
+  def user_is_owner?
+    user == record.user
+  end
+
+  def user_is_editor?
+    user && user.editor
   end
 end
