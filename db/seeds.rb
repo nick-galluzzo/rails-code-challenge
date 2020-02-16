@@ -17,20 +17,15 @@ sports = Category.create!(name: 'sports')
 adventure = Category.create!(name: 'adventure')
 
 
-Article.create!(title: 'title1', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.second)
-
-Article.create!(title: 'title2', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: adventure, user: User.first)
-
-Article.create!(title: 'title3', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.second)
-
-Article.create!(title: 'title4', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
-
-Article.create!(title: 'title5', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: sports, user: User.first)
-
-Article.create!(title: 'title6', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.second)
-Article.create!(title: 'title7', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
-Article.create!(title: 'title8', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
-Article.create!(title: 'title9', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.second)
-Article.create!(title: 'title10', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
-Article.create!(title: 'title11', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.second)
-Article.create!(title: 'title12', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odit voluptatibus minima harum eos beatae, adipisci autem id molestias, distinctio sit tempora magnam hic porro, dolorum voluptate. Quaerat nostrum, ad.', category: travel, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.second)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: adventure, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.second)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: sports, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.second)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.second)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.first)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.second)
+Article.create!(title: Faker::Music::RockBand.name, content: Faker::Lorem.sentence, category: travel, user: User.first)
