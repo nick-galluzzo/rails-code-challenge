@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
     if @article.save!
       redirect_to article_path(@article)
     else
-      flash[:notice] = 'error'
+      flash[:notice] = @article.errors.full_messages
     end
   end
 
@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to article_path(@article)
     else
-      flash[:notice] = 'error'
+      flash[:notice] = @article.errors.full_messages
     end
   end
 
