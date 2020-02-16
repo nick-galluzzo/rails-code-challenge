@@ -15,7 +15,7 @@ class AdminsController < ApplicationController
     if @user.save!
       redirect_to root_path
     else
-      flash[:notice] = "error"
+      flash[:notice] = @user.errors.full_messages
     end
   end
 
@@ -31,7 +31,7 @@ class AdminsController < ApplicationController
     if @user.update(user_params)
       redirect_to users_admin_index_path
     else
-      flash[:notice] = "error"
+      flash[:notice] =@user.errors.full_messages
     end
   end
 
